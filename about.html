@@ -10,15 +10,16 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <div>
+      <div class="container">
         <img src="img/logo.svg" alt="Raluca Comanici">
         <nav>
-          <ul>
-            <li><a href="index.html">Portfolio</a></li>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -27,24 +28,24 @@
     </header>
 
     <main>
-      <div> <!--orange 1-->
-        <div>
-          <h1>About</h1>
+      <div id="name"> <!--orange 1-->
+        <div class="container">
+          <h1>Hi, I'm Raluca.</h1>
         </div>
       </div>
 
       <div> <!--orange 2-->
-        <div>
+        <div class="container">
           <picture>
             <source srcset="img/raluca_1x.jpg" media="(max-width:767px)">
             <img src="img/raluca_2x.jpg" alt="Photo">
           </picture>
-          <div>
+          <div class="row">
 
-            <div> <!--My Story-->
-              <h2>My Story</h2>
-              <p>Hi, I'm Raluca</p>
-              <p>a UI Designer currently based in Nürnberg, Germany. Being creative is what fulfills
+            <div id="about"> <!--My Story-->
+              <h3>About me</h3>
+              <p>I'm a UI Designer currently based in Nürnberg, Germany. </p>
+              <p>Being creative is what fulfills
                 me the most. I’m a very inquisitive person willing to always discover and learn new
                 things, taking my inspiration from everywhere.</p>
                 <p>What I love most about Design is that it’s allowing me to be creative, at the same
@@ -56,9 +57,9 @@
                     read a good book or just enjoy a movie. </p>
             </div>
 
-            <div> <!--Skills & Tools-->
+            <div id="skills"> <!--Skills & Tools-->
               <h2>Skills & Tools</h2>
-              <div>
+              <div class="row">
                 <div> <!--Skills-->
                   <h3>Relevant Skills</h3>
                   <ul>
@@ -88,27 +89,22 @@
 
     <footer id="contact">
       <div>
-        <div>
-          <h5>Get in touch</h5>
+        <div class="container">
+          <h4>Get in touch</h4>
           <p>
             Do you like my work and want to discuss opportunities? Please get in touch.
           </p>
           <div>
-            <a href="mailto:emailaddress">send email</a>
+            <a href="mailto:emailaddress" class="button contact">send email</a>
           </div>
           <!--Social Media Layout and Placecholders-->
           <div>
-            <ul>
-              <li><a href="Linkedin-URL" target="_blank">
-                <i class="fab fa-linkedin"></i>
-              </a></li>
-              <li><a href="https://www.behance.net/ralucacomanici" target="_blank">
-                <i class="fab fa-behance-square"></i>
-              </a></li>
-              <li><a href="Instagram-URL" target=_blank>
-                <i class="fab fa-instagram-square"></i>
-              </a></li>
+            <ul class="socialmedia">
+              <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://www.behance.net/ralucacomanici" target="_blank"><i class="fab fa-behance"></i></a></li>
+              <li><a href="https://www.instagram.com/" target=_blank><i class="fab fa-instagram"></i></a></li>
             </ul>
+
             <div>
               <p>Copyright Raluca Comanici 2021</p>
             </div>

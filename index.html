@@ -10,15 +10,16 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <div>
-        <img src="img/logo.svg" alt="Raluca Comanici">
+      <div class="container">
+        <img class="logo" src="img/logo.svg" alt="Raluca Comanici">
         <nav>
-          <ul>
-            <li><a href="index.html">Portfolio</a></li>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -28,8 +29,8 @@
 
     <main>
       <!--Hero Section-->
-      <div>
-       <div>
+      <div id="hero">
+       <div class="container">
          <h1>
            <span>Hi, I'm Raluca.</span>
          </h1>
@@ -37,11 +38,11 @@
         </div>
       </div>
       <!--Work Section-->
-      <div>
-        <div>
+      <div id="work">
+        <div class="container">
           <h2>Projects</h2>
           <!--Easy Cook-->
-          <div>
+          <div class="row">
             <div>
               <picture>
                 <source srcset="img/easy-cook/home_1x.png" media="(max-width:767px)">
@@ -58,7 +59,7 @@
             </div>
           </div>
           <!--Beauty Rescue-->
-          <div>
+          <div class="row">
             <div>
               <picture>
                 <source srcset="img/beauty-rescue/home_1x.png" media="(max-width:767px)">
@@ -66,7 +67,7 @@
               </picture>
             </div>
             <div>
-              <h4>Beauty Rescue</h4>
+              <h3>Beauty Rescue</h3>
               <p>
                 a native app for those who are interested in beauty products and self care, but want to
                 make thoughtful choices analyzing the ingredient list of a product
@@ -74,6 +75,7 @@
               <a href="beauty-rescue.html" class="button">View Project</a>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -81,8 +83,8 @@
 
     <footer id="contact">
       <div>
-        <div>
-          <h5>Get in touch</h5>
+        <div class="container">
+          <h4>Get in touch</h4>
           <p>
             Do you like my work and want to discuss opportunities? Please get in touch.
           </p>
@@ -91,17 +93,12 @@
           </div>
           <!--Social Media Layout and Placecholders-->
           <div>
-            <ul>
-              <li><a href="Linkedin-URL" target="_blank">
-                <i class="fab fa-linkedin"></i>
-              </a></li>
-              <li><a href="https://www.behance.net/ralucacomanici" target="_blank">
-                <i class="fab fa-behance-square"></i>
-              </a></li>
-              <li><a href="Instagram-URL" target=_blank>
-                <i class="fab fa-instagram-square"></i>
-              </a></li>
+            <ul class="socialmedia">
+              <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://www.behance.net/ralucacomanici" target="_blank"><i class="fab fa-behance"></i></a></li>
+              <li><a href="https://www.instagram.com/" target=_blank><i class="fab fa-instagram"></i></a></li>
             </ul>
+
             <div>
               <p>Copyright Raluca Comanici 2021</p>
             </div>
