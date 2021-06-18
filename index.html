@@ -16,14 +16,17 @@
   <body>
     <header>
       <div class="container">
-        <img class="logo" src="img/logo.svg" alt="Raluca Comanici">
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+          <img class="logo" src="img/logo.svg" alt="Raluca Comanici">
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -1050,7 +1053,11 @@
         </div>
       </div>
     </footer>
-    <script scr="js/scripts.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
   </body>
 
 </html>

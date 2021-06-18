@@ -178,8 +178,7 @@ Layout Styling
 /* Header */
 header {
   background-color: #ffe4c4;
-  text-align: center;
-  padding: 10px 0;
+  padding: 12px 0 6px;
   box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.6);
   position:fixed;
   width: 100%;
@@ -187,7 +186,7 @@ header {
 
  /* Main */
 main {
-  padding-top: 111px;
+  padding-top: 38px;
 }
 
 /* Row */
@@ -217,16 +216,13 @@ main {
 
 /* Navigation Bar */
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -247,9 +243,35 @@ nav > ul > li > a:hover {
 
 nav > ul > li > a:active {}
 
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+/* Responsive Section */
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 /* Hero Section */
@@ -371,15 +393,32 @@ Medium devices (640px and larger)
     padding: 16px 0;
   }
 
-.logo {
-  padding: 13px 8px 7px 8px;
-}
+  .logo {
+    max-width: 250px;
+    padding: 13px 8px 7px 8px;
+  }
 
   nav {
     width: auto;
     float: right;
     margin: 0px;
   }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+  display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
   main {
     padding-top: 95px;
