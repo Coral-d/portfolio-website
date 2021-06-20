@@ -259,6 +259,12 @@ nav > ul > li > a:active {}
   position: relative;
 }
 
+nav i {
+  position: absolute;
+  top: 0;
+  right: 4px;
+}
+
 /* Responsive Section */
 .navtoggle.responsive nav {
   padding: 24px 0 0;
@@ -414,10 +420,16 @@ Medium devices (640px and larger)
 
   .navtoggle li:not(:last-child) {
   display: inline-block;
+  border-top: 0px transparent;
+  padding: 0 0 0;
 }
 
 .navtoggle li:last-child {
   display: none;
+}
+
+.navtoggle.responsive nav {
+  padding: 0 0 0;
 }
 
   main {
