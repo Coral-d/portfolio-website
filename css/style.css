@@ -16,16 +16,19 @@ Black: #000000
 Text Styling
 ================================= */
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
-  color: #000000;
+  color: #000;
 }
 
-h1, h2, h3, h4 {
-line-height: 1.4;
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
 }
 
 h1 {
@@ -63,10 +66,10 @@ img {
   height: auto;
 }
 
-@keyframes color-change  {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+@keyframes color-change {
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
 
 .sun {
@@ -78,8 +81,8 @@ img {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
 }
 
 .cloud-front {
@@ -91,8 +94,8 @@ img {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px,48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
 
 .cloud-back {
@@ -132,16 +135,16 @@ Buttons
 .button {
   display: inline-block;
   background-color: #db3b00;
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
-  padding:8px;
+  padding: 8px;
   border-radius: 3px;
   border-bottom: 1px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:visited {
-  color: #ffffff;
+  color: #fff;
 }
 
 .button:hover,
@@ -152,20 +155,20 @@ Buttons
 
 .button:active {
   background-color: #994c30;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Send Email - Button */
 .button.contact {
   background-color: transparent;
-  color: #db3B00;
+  color: #db3b00;
   text-transform: uppercase;
-  border: 2px solid #db3B00;
+  border: 2px solid #db3b00;
 }
 
 .button.contact:hover {
-  background-color: #db3B00;
-  color: #ffffff;
+  background-color: #db3b00;
+  color: #fff;
 }
 
 /* ==============================
@@ -179,12 +182,12 @@ Layout Styling
 header {
   background-color: #ffe4c4;
   padding: 12px 0 6px;
-  box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.6);
-  position:fixed;
+  box-shadow: 0 2px 6px 0 rgba(50, 50, 50, 0.6);
+  position: fixed;
   width: 100%;
 }
 
- /* Main */
+/* Main */
 main {
   padding-top: 38px;
 }
@@ -229,11 +232,11 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 nav > ul > li > a:visited {
-  color: #000000;
+  color: #000;
 }
 
 nav > ul > li > a:hover {
@@ -255,7 +258,8 @@ nav > ul > li > a:active {}
   padding-right: 0;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -273,7 +277,7 @@ nav i {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -296,54 +300,54 @@ nav i {
 footer {
   background-color: #ffe4c4;
   text-align: center;
-  padding:10px 0;
+  padding: 10px 0;
 }
 
 /* Socialmedia */
 .socialmedia {
-	display: inline-flex;
-	list-style-type: none;
+  display: inline-flex;
+  list-style-type: none;
   padding: 0;
   margin: 20px;
 }
 
 .socialmedia i {
-	color: #ffffff;
-	width: 36px;
-	height: 36px;
-	border-radius: 50%;
-	font-size: 18px;
-	margin-right: 10px;
-	transition: all 0.2s ease-in-out;
-	display: flex;
-	justify-content: center;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
 }
 
-.socialmedia i:before {
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
+.socialmedia i::before {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 
 .socialmedia a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .fa-linkedin {
-	background:#000000;
+  background: #000;
 }
 
 .fa-behance {
-	background:#000000;
+  background: #000;
 }
 
 .fa-instagram {
-	background:#000000;
+  background: #000;
 }
 
 .socialmedia i:hover {
-	opacity: .7;
-	border-radius: 0;
+  opacity: 0.7;
+  border-radius: 0;
 }
 
 /* ==============================
@@ -401,13 +405,13 @@ Medium devices (640px and larger)
 
   .logo {
     max-width: 250px;
-    padding: 13px 8px 7px 8px;
+    padding: 13px 8px 7px;
   }
 
   nav {
     width: auto;
     float: right;
-    margin: 0px;
+    margin: 0;
   }
 
   nav > ul {
@@ -415,22 +419,22 @@ Medium devices (640px and larger)
   }
 
   nav > ul > li {
-  display: inline-block;
+    display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-  border-top: 0px transparent;
-  padding: 0 0 0;
-}
+    display: inline-block;
+    border-top: 0 transparent;
+    padding: 0 0 0;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-.navtoggle.responsive nav {
-  padding: 0 0 0;
-}
+  .navtoggle.responsive nav {
+    padding: 0 0 0;
+  }
 
   main {
     padding-top: 95px;
@@ -446,42 +450,40 @@ Medium devices (640px and larger)
   }
 
   .col-md-1 {
-    width:100%;
+    width: 100%;
   }
 
-[class*="col-"] {
-  float: left;
-  padding: 0 10px;
-}
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
 
-#skills h3 {
-  margin-top: 0;
-}
+  #skills h3 {
+    margin-top: 0;
+  }
 
-#work h3 {
-  margin-top: 0;
-  margin-bottom: 18px;
+  #work h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
 }
-}
-
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   /* Columns */
   .col-lg-7 {
-    width: 60%
+    width: 60%;
   }
 
-.col-lg-7 h3 {
-  font-size: 2em;
-  font-weight: 700;
-}
+  .col-lg-7 h3 {
+    font-size: 2em;
+    font-weight: 700;
+  }
 
   .col-lg-5 {
-    width: 40%
+    width: 40%;
   }
 
   /* Container */
