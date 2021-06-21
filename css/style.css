@@ -131,7 +131,7 @@ Buttons
 /* View Project - Button */
 .button {
   display: inline-block;
-  background-color: #ff7f50;
+  background-color: #db3b00;
   color: #ffffff;
   font-weight: 400;
   padding:8px;
@@ -158,13 +158,13 @@ Buttons
 /* Send Email - Button */
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: #db3B00;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #db3B00;
 }
 
 .button.contact:hover {
-  background-color: #ff7f50;
+  background-color: #db3B00;
   color: #ffffff;
 }
 
@@ -366,7 +366,7 @@ Easy Cook
 ================================= */
 #cook h1 {
   font-size: 1.75em;
-  font-weight: 550;
+  font-weight: 500;
   color: #f68903;
   margin: 0;
   padding-top: 24px;
@@ -384,7 +384,7 @@ Beauty Rescue
 ================================= */
 #beauty h1 {
   font-size: 1.75em;
-  font-weight: 550;
+  font-weight: 500;
   color: #e74168;
   margin: 0;
   padding-top: 24px;
